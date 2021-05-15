@@ -9,6 +9,11 @@ class AuthController extends Controller
 {
     public function index()
     {
-        return view('pages.auth.index');
+        return view('pages.auth.sign-in');
+    }
+
+    public function signUp()
+    {
+        return view('pages.auth.sign-up');
     }
 }

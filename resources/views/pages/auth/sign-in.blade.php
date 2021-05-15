@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <title>Login</title>
+    <title>Masuk</title>
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap"
         rel="stylesheet">
@@ -71,7 +71,8 @@
                                     </div>
                                     <button class="btn btn-primary btn-block" type="submit">Masuk</button>
                                 </div>
-                                <p class="mt-4 mb-0">Belum punya akun?<a class="ms-2" href="sign-up.html">Buat Akun</a>
+                                <p class="mt-4 mb-0">Belum punya akun?<a class="ms-2" href="{{ url('/sign-up') }}">Buat
+                                        Akun</a>
                                 </p>
                                 <script>
                                     (function() {
