@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Backend\Learners\BiodataController;
+use App\Http\Controllers\Backend\Learners\ClassController;
+use App\Http\Controllers\Backend\Learners\MyClassController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +23,6 @@ Route::get('/sign-up', [AuthController::class, 'signUp']);
 
 Route::prefix('learners')->group(function() {
     Route::resource('biodata', BiodataController::class);
+    Route::resource('class', ClassController::class);
+    Route::resource('my-class', MyClassController::class);
 });
